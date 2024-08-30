@@ -1,0 +1,134 @@
+/* Styles for the Blobers login page */
+body {
+    background-color: #f0f4f9;
+    font-family: 'Google Sans', sans-serif; /* Using Google Sans */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    width: 900px; /* Adjust the width as needed */
+    height: 350px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+
+    text-align: left; /* Align text to the left */
+}
+
+.email-phone-box {
+    text-align: right;
+    margin-top: -90px;
+    margin-right: 20px;
+    position: relative;
+}
+
+
+
+.email-phone-box input {
+    width: 350px;
+    height: 35px;
+    padding: 10px;
+    border: 1px solid #747775; /* Initial border color */
+    border-radius: 5px;
+    font-size: 14px;
+    color: #000000;
+     /* Initial text color */
+     font-family: 'Google Sans', sans-serif;
+     font-size: 16px;
+     &:not(:placeholder-shown) + .email-phone-label {
+        transform: translateY(-20px);
+        font-size: 12px;
+    }
+    transition: border-width 0.1s ease-in-out;
+}
+
+.email-phone-label {
+    position: absolute;
+    top: 2px; /* Adjust as needed */
+    left: 520px; /* Adjust as needed */
+    font-size: 16px;
+    color: #444746;
+    background-color: #fff;
+    padding: 0 5px;
+     /* Grey text color */
+    pointer-events: none; /* Prevent the label from interfering with input focus */
+    transition: all 0.2s; /* Smooth transition for changes */
+}
+
+
+.email-phone-box input:focus {
+    border-width: 3px;
+    border: 3px solid #0b57d0; /* Blue border color on focus */
+    outline: none; /* Remove default focus outline */
+    color: #000000; /* Blue text color on focus */
+}
+
+.sign-in-text {
+    font-size: 35px;
+    margin-left: 20px;
+    margin-bottom: -5px;
+    margin-top: 20px;
+}
+
+.use-your-account {
+    margin-left: 20px;
+}
+
+.blobers-logo {
+    width: 45px;
+    height: 45px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#email-phone-input:focus + .email-phone-label {
+    transform: translateY(-20px); /* Move the label up */
+    font-size: 12px;
+    color: #3257d0;
+}
+.new-button,
+.create-account-button{
+    position: relative;
+    text-align: center;
+    margin-left: 665px;
+    margin-top: 150px;
+    font-family: 'Google sans', sans-serif;
+    cursor: pointer;
+}
+
+.next-button {
+    background-color: #0b57d0; /* Blue background for "Next" button */
+    color: #fff;
+    padding: 10px 20px;
+    width: 75px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 20px;
+    border: none;
+    transition: all 0.1s;
+}
+
+.create-account-button {
+    background: #fff; /* No background for "Create Account" button */
+    color: #0074D9; /* Blue text color */
+    border: none;
+    font-weight:600;
+    transition: all 0.1s;
+    border-radius: 20px;
+    padding: 10px 20px;
+    right: 20px;
+}
+
+.next-button:hover{
+    background-color: #005198;
+    box-shadow: 1px 1px 1px rgb(146, 146, 146);
+}
+
+.create-account-button:hover{
+    background: #fcfcfc;
+}
+
